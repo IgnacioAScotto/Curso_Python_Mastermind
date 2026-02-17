@@ -54,3 +54,10 @@ else:
 
 
 print(f'\nTu puntuacion hasta ahora es: {puntuacion}')
+
+if puntuacion >= 25:
+    print("Resultado: Felicidades, sos fanatico de los quesos")
+elif puntuacion >=15:
+    print('Resultado: Felicidades, sos una persona a la que le gusta el queso')
+else:
+    print('Resultado: Felicidades, no te gusta el queso')
