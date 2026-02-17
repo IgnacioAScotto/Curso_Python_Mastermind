@@ -12,7 +12,7 @@ if telefono == "A":
                    'B - No\n'
                    'Tu Respuesta: ')
     if dinero == 'A':
-        camara = input('Te importa la camera del celular?\n'
+        camara = input('Te importa la camara del celular?\n'
                        'A - Si\n'
                        'B - No\n'
                        'Tu Respuesta: ')
