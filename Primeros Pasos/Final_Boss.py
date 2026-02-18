@@ -46,14 +46,34 @@ else:
           'Estas DESPEDIDO')
     exit()
 
-print('Ya estas en la final, tenes que tomar una decision importante:\n'
-      'Pones al pibe Beltran que es el que viene atajando en la Liga, o pones la jerarquia de Armani para un Last Dance que es el que viene atajando tanto en Copa Sudamericana como en Copa Argnetina?')
-opcion = input('[Opcion (A) - Beltran] | [Opcion (B) - Armani]: ')
+consejo_de_hincha_tomado = False
 
-if opcion == "A":
-    print('Lamentablemente el pibe no puede atajar un mano a mano en el minuto 88 y perdes la final en el alargue\n'
+print('De camino al estadio escuchas que un Hincha te dice que deberias poner a Rivero y no ha Paulo diaz, que haces?')
+
+opcion = input('[Opcion (A) - Tomas el consejo] | [Opcion (B) - Ignoras el consejo]: ')
+
+if opcion =="A":
+    print('Decidiste escuchar el consejo dell hincha y te va a ayudar para mas adelante')
+    consejo_de_hincha_tomado = True
+elif opcion == "B":
+    print('Estas seguro de que vos sabes mucho mas de futbol que el hincha y lo ignoras')
+else:
+    print('No estas haciendo nada por el club\n'
           'Estas DESPEDIDO')
     exit()
+
+print('Ya estas en la final, tenes que tomar una decision importante:\n'
+      'Pones al pibe Beltran que es el que viene atajando en la Liga, o pones la jerarquia de Armani para un Last Dance que es el que viene atajando tanto en Copa Sudamericana como en Copa Argnetina?')
+
+opcion = input('[Opcion (A) - Beltran] | [Opcion (B) - Armani]: ')
+
+if opcion == "A" and consejo_de_hincha_tomado == False:
+    print('Lamentablemente el pibe no puede atajar un mano a mano despues de un error de Paulo Diaz en el minuto 88 y perdes la final en el alargue\n'
+          'Estas DESPEDIDO')
+    exit()
+elif opcion == "A" and consejo_de_hincha_tomado == True:
+    print('Lamentablemente el pibe no puede atajar un mano a mano en el minuto 88 PERO APARECE RIVERO Y LA SACA EN LA LINEA\n'
+          'Y en el contraataque Luciano Gondou la manda al fondo de la red y sos CAMPEON de la SUDAMERICANA')
 elif opcion == "B":
     print('Armani salva un mano a mano en el minuto 88 y Luciano Gondou mete el gol de la victoria en la contra\n'
           'FELCIDADES, sos CAMPEON de la SUDAMERICANA\n'
