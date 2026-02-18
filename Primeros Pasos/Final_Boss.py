@@ -13,7 +13,7 @@ oferta_9 = random.randint(1,10)
 opcion = input('[OPCION (A) - Si] | [OPCION (B) - No, y juego con los mismos] | [OPCION (C) - No, y pongo a los pibes] : ')
 
 if opcion == "A":
-    print('Tenes que ofertar por Luciano Gondou\n'
+    print('Tenes que ofertar por Luciano Gondou\n'  
           'Tenes que hacer la cuenta de cuantos millones debes poner por el delantero, si le erras no van a aceptar la oferta.\n'
           'La cuenta es 10*{}'.format(oferta_9))
     opcion = int(input('Cual es el resultado?: '))
@@ -61,7 +61,7 @@ else:
     print('No estas haciendo nada por el club\n'
           'Estas DESPEDIDO')
     exit()
-
+    
 print('Ya estas en la final, tenes que tomar una decision importante:\n'
       'Pones al pibe Beltran que es el que viene atajando en la Liga, o pones la jerarquia de Armani para un Last Dance que es el que viene atajando tanto en Copa Sudamericana como en Copa Argnetina?')
 
@@ -73,12 +73,13 @@ if opcion == "A" and consejo_de_hincha_tomado == False:
     exit()
 elif opcion == "A" and consejo_de_hincha_tomado == True:
     print('Lamentablemente el pibe no puede atajar un mano a mano en el minuto 88 PERO APARECE RIVERO Y LA SACA EN LA LINEA\n'
-          'Y en el contraataque Luciano Gondou la manda al fondo de la red y sos CAMPEON de la SUDAMERICANA')
+          'Y en el contraataque Luciano Gondou la manda al fondo de la red')
 elif opcion == "B":
-    print('Armani salva un mano a mano en el minuto 88 y Luciano Gondou mete el gol de la victoria en la contra\n'
-          'FELCIDADES, sos CAMPEON de la SUDAMERICANA\n'
-          'Ahora Vamos por la LIBERTADORES')
+    print('Armani salva un mano a mano en el minuto 88 y Luciano Gondou mete el gol de la victoria en la contra')
 else:
     print('No estas haciendo nada por el club\n'
           'Estas DESPEDIDO')
     exit()
+
+print('Felicitaciones, sos CAMPEON de la COPA SUDAMERICANA\n'
+      'Ahora Vamos por la LIBERTADORES')
