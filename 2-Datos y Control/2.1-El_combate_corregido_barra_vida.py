@@ -1,5 +1,7 @@
 from random import randint
 
+import os
+
 vida_pikachu = 80
 vida_squirtle = 90
 
@@ -7,6 +9,8 @@ VIDA_INICIAL_PIKACHU = vida_pikachu #en mayusculas representan constantes, no va
 VIDA_INICIAL_SQUIRTLE = vida_squirtle 
 
 TAMANO_BARA_VIDA = 20
+
+
 
 
 while vida_pikachu>0 and vida_squirtle>0:
@@ -25,13 +29,18 @@ while vida_pikachu>0 and vida_squirtle>0:
 
     #Mostramos la vida de cada Pokemon
 
+    if vida_squirtle <0:
+        vida_squirtle = 0
+    
     barras_de_vida_pikachu = int(vida_pikachu * TAMANO_BARA_VIDA / VIDA_INICIAL_PIKACHU)
     print('Pikachu:    [{}{}] ({}/{})'.format('*' * barras_de_vida_pikachu, ' ' * (TAMANO_BARA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICIAL_PIKACHU))
 
-    barras_de_vida_squirtle = int(vida_pikachu * TAMANO_BARA_VIDA / VIDA_INICIAL_SQUIRTLE)
+    barras_de_vida_squirtle = int(vida_squirtle * TAMANO_BARA_VIDA / VIDA_INICIAL_SQUIRTLE)
     print('Squirtle:    [{}{}] ({}/{})'.format('*' * barras_de_vida_squirtle, ' ' * (TAMANO_BARA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICIAL_SQUIRTLE))
 
     input('Enter para Continuar...')
+    os.system('cls')
+    print('Limpieza de Pantalla\n')
 
     #Turno Squirtle
     print('\nTurno Squirtle')
@@ -48,17 +57,24 @@ while vida_pikachu>0 and vida_squirtle>0:
     elif ataque_squirtle == "C":
         print('Squirtle ataca con Pistola Agua')
         vida_pikachu -= 9
+    else:
+        print('Squirtle decide no atacar')
     
 
     #Mostramos la vida de cada Pokemon
 
+    if vida_pikachu < 0:
+        vida_pikachu = 0
+
     barras_de_vida_pikachu = int(vida_pikachu * TAMANO_BARA_VIDA / VIDA_INICIAL_PIKACHU)
     print('Pikachu:    [{}{}] ({}/{})'.format('*' * barras_de_vida_pikachu, ' ' * (TAMANO_BARA_VIDA - barras_de_vida_pikachu), vida_pikachu, VIDA_INICIAL_PIKACHU))
 
-    barras_de_vida_squirtle = int(vida_pikachu * TAMANO_BARA_VIDA / VIDA_INICIAL_SQUIRTLE)
+    barras_de_vida_squirtle = int(vida_squirtle * TAMANO_BARA_VIDA / VIDA_INICIAL_SQUIRTLE)
     print('Squirtle:    [{}{}] ({}/{})'.format('*' * barras_de_vida_squirtle, ' ' * (TAMANO_BARA_VIDA - barras_de_vida_squirtle), vida_squirtle, VIDA_INICIAL_SQUIRTLE)) 
 
     input('Enter para Continuar...')
+    os.system('cls')
+    print('Limpieza de Pantalla\n')
 
 
 
