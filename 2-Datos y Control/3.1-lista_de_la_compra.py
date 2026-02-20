@@ -1,6 +1,7 @@
 lista_compra = []
-
 agregar_cosas = None
+
+print('Bienvenido a la lista de la compra\n')
 
 while agregar_cosas != "Q":
 
