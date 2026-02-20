@@ -1,5 +1,4 @@
 from random import randint
-
 import os
 
 vida_pikachu = 80
@@ -57,7 +56,7 @@ while vida_pikachu>0 and vida_squirtle>0:
     elif ataque_squirtle == "C":
         print('Squirtle ataca con Pistola Agua')
         vida_pikachu -= 9
-    else:
+    elif ataque_squirtle == "D":
         print('Squirtle decide no atacar')
     
 
