@@ -3,8 +3,8 @@ from random import randint
 vida_pikachu = 80
 vida_squirtle = 90
 
-vida_inicial_pikachu = vida_pikachu
-vida_inicial_squirtle = vida_squirtle
+VIDA_INICIAL_PIKACHU = vida_pikachu
+VIDA_INICIAL_SQUIRTLE = vida_squirtle
 
 
 while vida_pikachu>0 and vida_squirtle>0:
@@ -23,8 +23,8 @@ while vida_pikachu>0 and vida_squirtle>0:
 
     print('La vida de Pikachu es {}, la vida de Squirtle es {}'.format(vida_pikachu, vida_squirtle))
 
-    porcentaje_vida_pikachu = vida_pikachu / vida_inicial_pikachu 
-    porcentaje_vida_squirtle = vida_squirtle / vida_inicial_squirtle 
+    porcentaje_vida_pikachu = vida_pikachu / VIDA_INICIAL_PIKACHU
+    porcentaje_vida_squirtle = vida_squirtle / VIDA_INICIAL_SQUIRTLE 
 
     cantidad_vida_pikachu = int(porcentaje_vida_pikachu * 10)
     cantidad_vida_squirtle = int(porcentaje_vida_squirtle * 10)
@@ -54,8 +54,8 @@ while vida_pikachu>0 and vida_squirtle>0:
 
     print('La vida de Pikachu es {}, la vida de Squirtle es {}'.format(vida_pikachu, vida_squirtle))
 
-    porcentaje_vida_pikachu = vida_pikachu / vida_inicial_pikachu 
-    porcentaje_vida_squirtle = vida_squirtle / vida_inicial_squirtle 
+    porcentaje_vida_pikachu = vida_pikachu / VIDA_INICIAL_PIKACHU 
+    porcentaje_vida_squirtle = vida_squirtle / VIDA_INICIAL_SQUIRTLE
 
     cantidad_vida_pikachu = int(porcentaje_vida_pikachu * 10)
     cantidad_vida_squirtle = int(porcentaje_vida_squirtle * 10)
