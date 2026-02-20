@@ -3,8 +3,8 @@ from random import randint
 vida_pikachu = 80
 vida_squirtle = 90
 
-VIDA_INICIAL_PIKACHU = vida_pikachu
-VIDA_INICIAL_SQUIRTLE = vida_squirtle
+VIDA_INICIAL_PIKACHU = vida_pikachu #en mayusculas representan constantes, no variables.
+VIDA_INICIAL_SQUIRTLE = vida_squirtle 
 
 TAMANO_BARA_VIDA = 20
 
@@ -36,8 +36,8 @@ while vida_pikachu>0 and vida_squirtle>0:
     #Turno Squirtle
     print('\nTurno Squirtle')
     ataque_squirtle = None
-    while ataque_squirtle != "A" and ataque_squirtle != "B" and ataque_squirtle != "C":
-        ataque_squirtle = input('Que ataque deseas realizar? [A]Placaje - [B]Burbuja - [C]Pistola Agua : ')
+    while ataque_squirtle != "A" and ataque_squirtle != "B" and ataque_squirtle != "C" and ataque_squirtle != "D":
+        ataque_squirtle = input('Que ataque deseas realizar? [A]Placaje - [B]Burbuja - [C]Pistola Agua - [D]No atacar: ')
     
     if ataque_squirtle == "A":
         print('Squirtle ataca con Placaje')
@@ -45,9 +45,10 @@ while vida_pikachu>0 and vida_squirtle>0:
     elif ataque_squirtle == "B":
         print('Squirtle ataca con Burbuja')
         vida_pikachu -= 17
-    else:
+    elif ataque_squirtle == "C":
         print('Squirtle ataca con Pistola Agua')
         vida_pikachu -= 9
+    
 
     #Mostramos la vida de cada Pokemon
 
